@@ -4,7 +4,7 @@ var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
-var h1 = document.querySelector("h1");
+var header = document.querySelector("#header");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
@@ -54,7 +54,7 @@ resetButton.addEventListener('click', function() {
     for(var i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
     }
-    h1.style.background = "#232323";
+    header.style.background = "steelblue";
 })
 
 colorDisplay.textContent = pickedColor;
@@ -78,7 +78,7 @@ for(var i = 0; i < squares.length; i++) {
            resetButton.textContent = "Play Again?"
            // corrected -> all paint with correct color
            changeColors(clickedColor);
-           h1.style.background = clickedColor;
+           header.style.background = clickedColor;
         } else {
             // wrong -> clicked square clear
             // no delete! just make the background color the same as invisible
