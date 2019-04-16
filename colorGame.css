@@ -84,6 +84,7 @@ button {
     --webkit-transition: all 0.5s;
     --moz-transition: all 0.5s;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
