@@ -8,15 +8,13 @@ var header = document.querySelector("#header");
 var resetButton = document.querySelector("#reset");
 var modeBtn = document.querySelectorAll(".mode");
 
-var game = {};
-
-game.init() = function () {
+function init() {
     setupModeButtons();
     setupSquares();
     reset();
 }
 
-game.init();
+init();
 
 function setupModeButtons() {
     // mode buttons event listener
